@@ -3,7 +3,7 @@ import {BrowserRouter ,Routes,Route} from 'react-router-dom';
 import  Active from './MyComponents/Active'
 import Completed from './MyComponents/Completed'
 import Todolist from './MyComponents/Todolist';
-
+import Tasklist from './MyComponents/Tasklist';
 function App() {
  
   return <>
@@ -12,9 +12,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         
-        <Route path="/active" element={<Active/>} />
-        <Route path="/completed" element={<Completed/>} />
-        <Route path="/all" element={<Todolist/>} />
+        <Route path="active" element={<Todolist/>} />
+        <Route path="completed" element={<Todolist/>} />
+        <Route path="all" element={<Todolist/>} />
         <Route path="/" element={<Todolist/>} />
       </Routes>
     
